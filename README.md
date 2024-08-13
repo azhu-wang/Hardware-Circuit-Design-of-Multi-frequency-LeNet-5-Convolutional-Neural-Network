@@ -1,5 +1,6 @@
-
-
+Enviroment: Vivado 2024
+IP: Block Memory Generator (If you don’t want to use vivado, please remove the relevant IP.)
+Our weights are generated using PYTHON,store in Block Memory.
 
 ![投影片1](https://github.com/user-attachments/assets/2b6926e8-acdb-4d43-b6f9-e9c5a05de05a)
 ![投影片2](https://github.com/user-attachments/assets/6baf0103-824b-4439-a807-047c969bdb1d)
