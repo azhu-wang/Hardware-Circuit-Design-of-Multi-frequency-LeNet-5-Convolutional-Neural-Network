@@ -22,7 +22,7 @@ always @(posedge clk or negedge rst_n) begin  //1+36
     else 
     if (en && !ready) begin
         if (reg_count == 35)begin
-            Value <= Value + bias;
+            Value <= Value + in1 * weight1 + in2 * weight2 + bias;
             ready <= 1;
             reg_count <= 0;
         end

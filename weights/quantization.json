@@ -1,0 +1,12 @@
+{
+  "format": "signed-power-of-two",
+  "input": {"bits": 8, "scale": 128, "zero_point": 0},
+  "weights": {"bits": 8, "scale": 128, "zero_point": 0},
+  "activations": [
+    {"layer": "conv1", "bits": 8, "scale": 8, "zero_point": 0, "rtl_shift": 11},
+    {"layer": "conv3", "bits": 8, "scale": 2, "zero_point": 0, "rtl_shift": 9},
+    {"layer": "conv5", "bits": 8, "scale": 2, "zero_point": 0, "rtl_shift": 7}
+  ],
+  "bias": {"enabled": false, "rom_entry": 0},
+  "training": {"seed": 7, "epochs": 10, "mnist_integer_accuracy_percent": 93.86}
+}

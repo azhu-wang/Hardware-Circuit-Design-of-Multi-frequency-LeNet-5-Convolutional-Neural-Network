@@ -116,7 +116,8 @@ always @(negedge clk or negedge rst_n ) begin
                 en_l3 <= 0;
             end
         end
-        cycle_count = cycle_count + 1;
+        if (cycle_count <= 905)
+            cycle_count <= cycle_count + 1;
     end
     end
 end
